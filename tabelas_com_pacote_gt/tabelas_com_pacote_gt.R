@@ -1,3 +1,10 @@
+# Cronograma Inicial das aulas -----
+###
+
+- Ver o vídeo completo no youtube
+- Analaisar a pagina do GT
+- Começar a ler os PDFS, fazendo exercicios de fixação no final de cada aula
+
 # Pacotes Utilizados -----
 ###
 
