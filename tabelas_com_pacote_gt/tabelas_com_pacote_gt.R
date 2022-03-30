@@ -10,6 +10,7 @@ library(car)
 ###
 
 # https://gt.rstudio.com/
+# https://rstudio.cloud/project/779965
 # https://www.youtube.com/watch?v=h1KAjSfSbmk&ab_channel=RStudio  
 # E os PDFs que estao na outra pagina
 
@@ -54,9 +55,19 @@ ex_2
 
 ex_3 <- carro %>% select(mfr, model, year) %>% 
                   gt(groupname_col = "mfr") %>% 
-                  tab_header(title = "Table Title" ) 
+                  tab_header(title = "Table Title" ) # Titulo
 
+ex_3
+ex_3.1 <- carro %>% select(mfr, model, year) %>% 
+  gt(groupname_col = "mfr") %>% 
+  tab_header(title = "Table Title", subtitle = "Subtitulo" ) # Titulo e Subtitulo
 
+# Pondo em negrito o enunciado do titulo. Para rodar e necesssario por o codigo dentro do "md"
+ex_3.2 <- carro %>% select(mfr, model, year) %>% 
+  gt(groupname_col = "mfr") %>% 
+  tab_header(title = md ("**Tabela 1.** Table Title"), subtitle = md("Subtitulo") ) # Titulo e Subtitulo
+
+ex_3.2
 
 # Perguntas a serem respondidas sobre o título: Como desloca-lo para direita ou
 # para a esquerda?
@@ -67,10 +78,11 @@ ex_3 <- carro %>% select(mfr, model, year) %>%
 
 ex_4 <- carro %>% select(mfr, model, year) %>% 
   gt(groupname_col = "mfr") %>% 
-  tab_header(title = "Table Title" ) %>% 
-  tab_source_note(source_note = "Fonte: Pacote Cars") # Com este comendo colocamos a fonte dos dados na tabela
+  tab_header(title = md ("**Tabela 1.** Table Title")) %>% 
+  tab_source_note(source_note = md("**Fonte:** Pacote Cars")) # Com este comendo colocamos a fonte dos dados na tabela. Como tambem o negrito na fonte.
 
 ex_4
+
 
 # Como Salvar a tabela   ----- 
 ### A.1
@@ -82,6 +94,36 @@ ex_4
 
 ex_4 %>% gtsave("ex_4.png")
 
+# Descricao das variaveis:"tab_spanner"  ----- 
+### A.2
+
+# Informaçoes que resumem as informações infoarmada sobre o assunto: "tab_spanner" 
+# Fazer uma tabela com as caractersiticas do carro que estao no banco:
+# de forma a destacar a sua origem, tipo, ano e marca
+# Na linha estara o modelo, nnas colunas as informacoes, enquanto que que no 
+# "tab_spanner" uma informacao que resume a variável
+
+ex_5 <- carro %>% gt (rowname_col = "model") %>% # Indicacao da variavel da linha 
+  tab_spanner(label = "Descricao dos carros", # Descricao agrupamento 1 
+              columns = vars( year, bdy_style , ctry_origin, mfr)) %>% # Descricao agrupamento 1 
+  tab_header(title = md ("**Tabela 1.** Caracteristicas do carros ")) %>% # Título
+  tab_source_note(source_note = md("**Fonte:** Pacote Cars")) # Com este comendo colocamos a fonte dos dados na tabela. Como tambem o negrito na fonte.
+
+# OBS: Se eu nao por "rowname_col = "model"" a linha sera formada pela primeira 
+# variavel do banco. Porem, se essa variavel estiver dentro do tab_spanner a segunda
+# variavel que sera a primeira linha
+# O exemplo a seguir nao tem a "rowname_col" dai o nome da coluna aparece.
+# O exemplo a seguir porssui a descricao de dois agrupamentos
+
+ex_6 <- carro %>% gt () %>% 
+  tab_spanner(label = "Descricao dos carros", # Descricao agrupamento 1
+              columns = vars( year, bdy_style , ctry_origin, mfr, trim)) %>% # Descricao agrupamento 1 
+  tab_spanner(label = "Performace dos carros", # Descricao agrupamento 2
+              columns = vars(hp,hp_rpm,trq,trq_rpm,mpg_c,mpg_h,drivetrain,trsmn,msrp)) %>% # Descricao agrupamento 2
+    tab_header(title = md ("**Tabela 1.** Caracteristicas do carros ")) %>% # Título
+  tab_source_note(source_note = md("**Fonte:** Pacote Cars")) # Com este comendo colocamos a fonte dos dados na tabela. Como tambem o negrito na fonte.
+
+ex_6                   
 
 
 ############################## Por quando chegar a hora 
@@ -110,9 +152,6 @@ fmt_number(
 
 # Perguntas a serem respondidas sobre o título: Como desloca-lo para direita ou
 # para a esquerda? Tentar ver da oformaque muda no ggplot
-
-# Como que ponho o enunciado em negrito? Tentar fazer pelos os ensinamentos 
-# que tenho do curso de graficos 
 
 # Como mudo o tamanho da fonte das letras na tabela?
 
