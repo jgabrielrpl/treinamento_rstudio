@@ -1,0 +1,33 @@
+Variaveis Independentes ;Dimensao;Informacao;Fontes 
+Log da populacao (2019);Sociodemografica;Indica o log da populacao estimada em 2019;IBGE
+Regiao;Sociodemografica;Indica a regiao do municipio;IBGE
+GINI (2010);Sociodemografica;Indica o Coeficiente de Gini municipal;IBGE
+PIB per capita (2017);Sociodemografica;PIB municipal per capita em 2017;IBGE
+Metropole;Sociodemografica;Indica se o município integra alguma região metropolitana;IBGE
+Municipio polo de saude;Sociodemografica;Indica se o município integra alguma região de saude;DATA-SUS
+Densidade Demografica;Sociodemografica;Indica a densidade demografica do município, calculada pela relação entre o número de habitantes por area;IBGE
+Denpencia financeira (2019) ;Sociodemografica;Indica a denpencia financeira de um município de rendas transferidas pelos demais entes da federação em 2019;IBGE
+NEP ;Politica;Indica o nível de competicao eleitoral do município calculado pelo numero de partidos efetivos (NEP) em 2020;TSE
+Diferenca entre Haddad e Bolsonaro;Politica;Indica a diferenca de votos entre Jair Bolsonaro e Fernando Haddad no segundo turno;TSE
+Diferenca entre o primeiro e o segundo colocado (2016);Politica;Indica a diferenca entre o primeiro e o segundo colocado nas eleicoes de 2016;TSE
+Partido Politico;Individual do Candidato;A variável destaca os 10 partidos que conquistaram o maior número de prefeituras nas eleições de 2016;TSE
+Prefeita;Individual do Candidato;Indica se o candidato a reeleicao declarou ser do sexo feminino;TSE
+Casado (a);Individual do Candidato;Indica se o candidato a reeleicao e casado;TSE
+Medico;Individual do Candidato;Indica se o candidato a reeleicaodeclarou ser medico;TSE
+Ensino Superior ;Individual do Candidato;Indica se o candidato a reeleicao possui ensino superior;TSE
+% despesa por candidato;Individual do Candidato;Indica o percentual de recursos utilizado pelo postulante em relaçao ao total de recursos gasto por todos os candidatos nas eleicoes de 2020;TSE
+Nº obitos ate outubro/10 mil hab ;Pandemia ;Indica o numero de obitos por 10 habitantes ate o mes de outubro de 2020;DATA-SUS
+Nº  casos ate outubro/10 mil hab;Pandemia ;Indica o numero de casos por 10 habitantes ate o mes de outubro de 2020;DATA-SUS
+Proporção de beneficiario;Pandemia ;Indica a proporcao de beneficiarios do auxilio emergencial ate outubro de 2020;DATA-SUS
+Valor recebido de auxilio per capita;Pandemia ;Indica o valor recebido per capita ate outubro de 2020  ;DATA-SUS
+% de funcionarios discricionarios;Pandemia ;Indica o percentual de funcionarios discricionarios em 2020;FINBRA
+Funcionario per capita;Pandemia ;Indica o valor recebido por funcionarios discricionarios per capita;FINBRA
+Despesas totais com saude per capita;Pandemia ;Indica as despesas totais com saude per capita em 2020;DATA-SUS
+Vari.% em saude per capita ;Pandemia ;Indica a variacao percentual do gasto em saude per capita entre 2019 e 2020;DATA-SUS
+Vari.% de medicos ;Pandemia ;Indica a variacao percentual de medico entre 2019 e 2020 ;DATA-SUS
+Vari.% de auxiliar de enfermagem;Pandemia ;Indica a variacao percentual de tecnicos de enfermagem entre 2019 e 2020;DATA-SUS
+Media restricao em locais de trabalho;Pandemia ;A media da restrição de mobilidade em locais de trabalho indicada pelo relatório do google no ano de 2020;GOOGLE
+IDEB (2019);Pandemia ;Indica a nota do IDEB nos anos finais em 2019;FINBRA
+Vari.% IDEB (2017-2019);Pandemia ;Indica a variacao percentual da nota do IDEB nos anos finais entre 2017 e 2019;FINBRA
+Vari.% educacao fundamental infantil per capita;Pandemia ;Indica a variacao percentual do valor gasto em ensino fundamental e infantil per capita entre 2016 e 2020;FINBRA
+Despesas com educacao infantil per capita em 2020;Pandemia ;Indica as despesas com educacao infantil per capita em 2020;FINBRA

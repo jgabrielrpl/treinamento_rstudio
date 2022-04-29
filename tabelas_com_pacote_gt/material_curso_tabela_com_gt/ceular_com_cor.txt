@@ -1,0 +1,3 @@
+https://search.r-project.org/CRAN/refmans/gt/html/data_color.html
+https://gt.rstudio.com/reference/tab_style.html
+https://stackoverflow.com/questions/68399449/way-to-format-gt-table-across-a-single-row
