@@ -11,7 +11,8 @@ library(car)
 
 # https://gt.rstudio.com/
 # https://rstudio.cloud/project/779965
-# https://www.youtube.com/watch?v=h1KAjSfSbmk&ab_channel=RStudio  
+# https://www.youtube.com/watch?v=h1KAjSfSbmk&ab_channel=RStudio
+# https://www.youtube.com/watch?v=aPRVzk9pvno&ab_channel=RStudio
 # E os PDFs que estao na outra pagina
 
 # Baixar o pacote Gt -----
